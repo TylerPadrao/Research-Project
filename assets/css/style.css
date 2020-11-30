@@ -1,0 +1,101 @@
+body {
+  background-color: lightslategray;
+  margin-top: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+h1 {
+  font-family: "Trebuchet MS";
+  text-align: center;
+  padding-top: 1em;
+  color: #800020;
+}
+
+.home {
+  background-color: green;
+  color: red;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  width: 60%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  margin: 30px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Trebuchet MS";
+  padding-top: 1em;
+}
+
+/*
+navigation idea borrowed from W3 Schools
+*/
+.topnav {
+  margin-top: 0;
+  overflow: hidden;
+  background-color: #800020;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  justify-content: center;
+  color: darkblue;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: red;
+}
+
+img {
+  max-width: 100%;
+}
+
+.topnav .home {
+  background-color: green;
+  color: red;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav {
+    display: block;
+  }
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  p {
+    width: auto;
+  }
+  .row {
+    display: block;
+  }
+  .column {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

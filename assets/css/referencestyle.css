@@ -1,0 +1,84 @@
+body {
+  background-color: lightslategray;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 0;
+}
+
+h1 {
+  font-family: "Trebuchet MS";
+  margin-top: 1.5em;
+  color: #800020;
+}
+
+.references {
+  background-color: green;
+  color: red;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+}
+
+div a {
+  color: darkblue;
+}
+
+footer {
+  text-align: center;
+  font-family: "Trebuchet MS";
+  padding-top: 1em;
+}
+
+/*
+navigation idea borrowed from W3 Schools
+*/
+.topnav {
+  margin-top: 0;
+  overflow: hidden;
+  background-color: #800020;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  justify-content: center;
+  color: darkblue;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: red;
+}
+
+.topnav .references {
+  background-color: green;
+  color: red;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .topnav {
+    display: block;
+  }
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  a {
+    word-wrap: break-word;
+  }
+}

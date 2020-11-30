@@ -1,0 +1,114 @@
+body {
+  background-color: lightslategray;
+  margin-top: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+h1 {
+  font-family: "Trebuchet MS";
+  color: #800020;
+}
+
+div {
+  margin-bottom: 3em;
+  margin-top: 3em;
+  clear: both;
+}
+
+img {
+  margin-bottom: 3em;
+  max-width: 100%;
+}
+
+.right {
+  float: right;
+  padding-left: 15px;
+}
+
+.left {
+  float: left;
+  padding-right: 15px;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bolder;
+  color: #800020;
+}
+
+footer {
+  text-align: center;
+  font-family: "Trebuchet MS";
+  padding-top: 7em;
+}
+
+/*
+navigation idea borrowed from W3 Schools
+*/
+.topnav {
+  margin-top: 0;
+  overflow: hidden;
+  background-color: #800020;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  justify-content: center;
+  color: darkblue;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: red;
+}
+
+.topnav .health,
+.topnav .technology,
+.topnav .communication {
+  background-color: green;
+  color: red;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav {
+    display: block;
+  }
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  /*
+  .work_life_balance {
+    display: flex;
+    flex-flow: column;
+  }
+  .work_life_balance h1 {
+    order: 1;
+  }
+  .work_life_balance img {
+    order: 2;
+    align-self: flex-start;
+    margin-left: auto;
+  }
+  .work_life_balance p {
+    order: 3;
+  }
+  */
+}
